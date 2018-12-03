@@ -6,7 +6,7 @@
 	<title>Магазин Пельмешкина</title>
 	<link rel="stylesheet" type="text/css" href="assets/styles/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
-		
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
 </head>
 <body>
 	<header class="header">
@@ -17,12 +17,38 @@
 
 <div class="container">
 	<div class="sidebar">
+		<h1>Filter</h1>
+		<p>Размер:</p>
+		<select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+  			<option value="AL">Alabama</option>
+  			<option value="WY">Wyoming</option>
+		</select>
+		<p>Аниме:</p>
+		<select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+  			<option value="AL">Пельмешки</option>
+  			<option value="WY">Вкусные</option>
+		</select>
+		<p>Цена:</p>
+		<select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+  			<option value="AL">Даня</option>
+  			<option value="WY">Пельмень</option>
+		</select>
+		<p>Вид:</p>
+		<select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+  			<option value="AL">Сайтик</option>
+  			<option value="WY">Собирайтик</option>
+		</select>
+	</div>
+	<div class="shoplist">
+		<div class="figure"></div>
+		<div class="figure"></div>
+		<div class="figure"></div>
 		
 	</div>
-	<div class="shoplist"></div>
 </div>
-	
+
 <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 <script type="text/javascript" src="assets/scripts/script.js"></script>
 </body>
 </html>

@@ -1,8 +1,7 @@
-body {
-	
-}
-
 .header {
+	position: fixed;
+    right: 0;
+    left: 0;
 	margin-bottom: 50px;
 	height: 60px;
 	background-color: blue;
@@ -30,17 +29,43 @@ body {
 	justify-content: space-between;
 	width:  900px;
 	margin: 0 auto;
+	padding-top: 100px;
 }
 .sidebar {
 	margin-right: 20px;
-	height: 500px;
-	background-color: yellow;
-	border: 2px solid black;
-	width: 200px;
+	height: calc(100vh - 100px);
+	background-color: orange;
+	width: 250px;
 }
 .shoplist {
 	background-color: grey;
-	height: 500px;
+	height: calc(100vh - 100px);
 	width: 800px;
-	border: 2px solid pink;
+}
+
+.sidebar h1 {
+	text-align: center;
+ 	margin-top: 6px;
+ 	margin-bottom: 20px;
+ 	font-size: 24px;
+	font-weight: 900;
+}
+.sidebar p {
+	margin-left: 20px;
+	font-size: 20px;
+}
+span {
+	margin-left: 20px;
+	font-size: 20px;
+	font-weight: 900;
+}
+.sidebar select {
+	width: calc(100% - 20px);
+}
+.figure {
+	margin: 50px;
+	width: 150px;
+	height: 250px;
+	background-color: white;
+	border: 1px solid black;
 }
