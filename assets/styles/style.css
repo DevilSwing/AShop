@@ -25,9 +25,8 @@
 }
 .container {
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
-	width:  900px;
+	width:  1440px;
 	margin: 0 auto;
 	padding-top: 100px;
 }
@@ -38,9 +37,13 @@
 	width: 250px;
 }
 .shoplist {
+	padding: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	background-color: grey;
 	height: calc(100vh - 100px);
-	width: 800px;
+	width: 1390px;
 }
 
 .sidebar h1 {
@@ -63,9 +66,24 @@ span {
 	width: calc(100% - 20px);
 }
 .figure {
-	margin: 50px;
-	width: 150px;
-	height: 250px;
+	width: 250px;
+	height: 360px;
 	background-color: white;
 	border: 1px solid black;
+}
+
+.test {
+	width: 100%;
+	height: 180px;
+}
+.nice {
+	font-weight: 900;
+	font-size: 20px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+}
+.nice span {
+	color: red;
+	font-size: 15px;
+	font-weight: 300;
 }
