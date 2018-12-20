@@ -5,19 +5,31 @@ $(document).ready(function () {
 
 
 	$('.js-example-basic-multiple').change(function(event){
-		console.log(event.target.classList[0]);	
 		let filter = [];
 		switch(event.target.classList[0]){
 			case 'size':
-			filter = figuries.filter(function(current){
-				return current.size === event.target.options[event.target.selectedIndex].value;
-			});console.log(filter);
-			break;
+				filter = figuries.filter(function(current){
+					return event.target.options[event.target.selectedIndex] === undefined ? true
+					 : current.size === event.target.options[event.target.selectedIndex].value;
+				});
+				break;
 			case 'anime':
-			break;
+				filter = figuries.filter(function(current){
+					return event.target.options[event.target.selectedIndex] === undefined ? true
+					 : current.name === event.target.options[event.target.selectedIndex].value;
+				});
+				break;
 			case 'cost':
-			break;
+				filter = figuries.filter(function(current){
+					return event.target.options[event.target.selectedIndex] === undefined ? true
+					 : current.cost == event.target.options[event.target.selectedIndex].value;
+				});
+				break;
 			case 'type':
+				filter = figuries.filter(function(current){
+					return event.target.options[event.target.selectedIndex] === undefined ? true
+					 : current.type === event.target.options[event.target.selectedIndex].value;
+				});
 			break;
 		};
 		let result = '';
@@ -44,6 +56,8 @@ figuries.forEach((goods) => {
  			<div class="nice">Размер:<span>' + goods.size + '</span></div>\
  			<div class="nice">Цена:<span>' + goods.cost + '</span></div>\
  			<div class="nice">Вид:<span>' + goods.type + '</span></div>\
+ 			<button class="podrobnee">Подробнее</button>\
+			<button class="buy">Купить</button>\
  		</div>';		
 });
 

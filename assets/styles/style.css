@@ -31,17 +31,20 @@
 	padding-top: 100px;
 }
 .sidebar {
+	border-radius: 6px;
+	position: fixed;
+	margin-top: 30px;
 	margin-right: 20px;
-	height: calc(100vh - 100px);
+	height: calc(100vh - 130px);
 	background-color: orange;
 	width: 250px;
 }
 .shoplist {
+	margin-left: 300px;
 	padding: 30px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	background-color: grey;
 	height: calc(100vh - 100px);
 	width: 1390px;
 }
@@ -54,10 +57,12 @@
 	font-weight: 900;
 }
 .sidebar p {
+	font-family: 'Roboto', sans-serif;
 	margin-left: 20px;
 	font-size: 20px;
 }
 span {
+	font-family: 'Roboto', sans-serif;
 	margin-left: 20px;
 	font-size: 20px;
 	font-weight: 900;
@@ -66,6 +71,8 @@ span {
 	width: calc(100% - 20px);
 }
 .figure {
+	border-radius: 5px;	
+	margin-top: 60px;
 	width: 250px;
 	height: 410px;
 	background-color: white;
@@ -79,11 +86,12 @@ span {
 }
 .nice {
 	font-weight: 900;
-	font-size: 20px;
+	font-size: 15px;
 	margin-bottom: 10px;
 	margin-left: 5px;
 }
 .nice span {
+	font-family: 'Roboto', sans-serif;
 	color: red;
 	font-size: 15px;
 	font-weight: 300;
