@@ -74,8 +74,10 @@ span {
 	border-radius: 5px;	
 	margin-top: 60px;
 	width: 250px;
-	height: 410px;
-	background-color: white;
+	height: 430px;
+	/*white-space: nowrap;     overflow: hidden;  Обрезаем все, что не помещается в область 
+    text-overflow: ellipsis;  Добавляем многоточие 
+	*/background-color: white;
 	border: 1px solid black;
 	margin-bottom: 40px;
 }
@@ -85,14 +87,31 @@ span {
 	height: 280px;
 }
 .nice {
+	max-width: 100%;
 	font-weight: 900;
 	font-size: 15px;
 	margin-bottom: 10px;
 	margin-left: 5px;
 }
 .nice span {
+	max-width: 100%;
 	font-family: 'Roboto', sans-serif;
 	color: red;
 	font-size: 15px;
 	font-weight: 300;
+}
+
+.figure button {
+	margin-bottom: 10px;
+}
+.buy, .podrobnee {
+	background-color: black;
+	color: white;
+	font-weight: 900;
+	padding: 5px;
+	border: none;
+}
+.podrobnee {
+	margin-right: 40px;
+	margin-left: 30px;
 }
